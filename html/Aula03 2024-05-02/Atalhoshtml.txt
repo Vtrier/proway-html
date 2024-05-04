@@ -1,0 +1,12 @@
+Alt + seta: Mover linha
+Alt + Shift + seta: Duplicar linha
+Alt + Shift + F: formatar, ou seja, corrigir a identação do seu código
+Ctrl + Shift  + K: apagar linha 
+Ctrl + D: selecionar próxima ocorrencia
+Ctrl + B: ocultar painel lateral
+Ctrl + N: Novo documento
+Ctlr + Shift + P: Abrir busca de comandos do vscode
+Ctlr + F: Buscar
+Ctrl + H: Substituir
+Ctlr + Shift + F: Buscar no projeot
+Ctrl + Shift + H: Substituir no projeto

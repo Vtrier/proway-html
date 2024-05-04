@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05</title>
+</head>
+
+<body>
+    <h1>Cadastre suas informações</h1>
+    <form action="/cadastro" method="get">
+        <div>
+            <label for="campo-nome">Nome:</label>
+            <input type="text" name="nome" id="campo-nome" required>
+        </div>
+        <div>
+            <input type="radio" id="campo-menor-18" name="idade" value="menorIdade" required>
+            <label for="campo-menor-18">Menos de 18 anos</label>
+            <input type="radio" id="campo-18-35" name="idade" value="18a35">
+            <label for="campo-18-35">Entre 18 a 35 anos</label>
+            <input type="radio" id="campo-36-60" name="idade" value="36a60">
+            <label for="campo-36-60">Entre 36 a 60 anos</label>
+            <input type="radio" id="campo-maior-60" name="idade" value="mais60">
+            <label for="campo-maior-60">Mais de 60 anos</label>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>

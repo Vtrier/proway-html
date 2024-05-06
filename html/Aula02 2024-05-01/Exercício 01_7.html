@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+</head>
+
+<body>
+    <h1>Pinturas OTTO</h1>
+    <form action="/envio" method="get">
+        <div>
+            <label for="campo-nome">Preencha seu nome:</label>
+            <input type="text" id="campo-nome" name="nome">
+        </div>
+        <div>
+            <label for="campo-carro">Gostaria de incluir uma limpeza total no carro?</label>
+            <input type="checkbox" name="carro" id="campo-carro">
+        </div>
+        <div>
+            <label for="campo-cor">Escolha a cor desejada</label>
+            <input type="color" name="cor" id="campo-cor">
+        </div>
+        <div>
+            <label for="campo-foto">Selecione uma foto do seu carro:</label>
+            <input type="file" name="foto" id="campo-foto">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

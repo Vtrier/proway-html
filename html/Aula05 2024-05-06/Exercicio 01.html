@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária Motors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        alert("Olá mundo")
+    </script>
+</head>
+
+<body>
+    <form action="/Aula05 2024-05-06/Exercicio 01_1.html" method="get">
+        <h1>Concessionária Motors</h1>
+        <h2>Pesquisa avançada</h2>
+        <div>
+            Escolha a marca do carro:
+            <select name="marca" id="campo-marca">
+                <option selected="select" disabled="disabled">Selecione uma opção</option>
+                <option value="1">Chevrolet</option>
+                <option value="2">Fiat</option>
+                <option value="3">Toyota</option>
+                <option value="4">Ford</option>
+                <option value="5">BMW</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" name="estado" id="campo-novo" value="novo">
+            <label for="campo-novo">Novo</label>
+            <input type="radio" name="estado" id="campo-usado" value="usado">
+            <label for="campo-usado">Usado</label>
+        </div>
+        <div>
+            <label for="campo-ano-i">Ano inicial</label>
+            <input type="number" min="1960" max="2024" name="anoI" id="campo-ano-i">
+            <label for="campo-ano-f">Ano final</label>
+            <input type="number" min="1960" max="2024" name="anoF" id="campo-ano-f">
+        </div>
+        <div> Opcionais: </div>
+        <div>
+            <input type="checkbox" name="airbag" id="campo-airbag">
+            <label for="campo-airbag">airbag</label>
+        </div>
+        <div>
+            <input type="checkbox" name="alarme" id="campo-alarme">
+            <label for="campo-alarme">Alarme</label>
+        </div>
+        <div>
+            <input type="checkbox" name="arC" id="campo-arc">
+            <label for="campo-arc">Ar-condicionado</label>
+        </div>
+        <div>
+            <input type="checkbox" name="arQ" id="campo-arq">
+            <label for="campo-arq">Ar-quente</label>
+        </div>
+        <div>Cor:</div>
+        <div>
+            <input type="checkbox" name="branco" id="campo-branco">
+            <label for="campo-branco">Branco</label>
+        </div>
+        <div>
+            <input type="checkbox" name="preto" id="preto">
+            <label for="campo-preto">Preto</label>
+        </div>
+        <div>
+            <input type="checkbox" name="vermelho" id="campo-vermelho">
+            <label for="campo-vermelho">Vermelho</label>
+        </div>
+        <div>
+            <input type="checkbox" name="prata" id="campo-prata">
+            <label for="campo-prata">Prata</label>
+        </div>
+        <div>Selecione o tipo do carro:</div>
+        <div>
+            <input type="radio" name="tipo" id="campo-suv" value="suv">
+            <label for="campo-suv">SUV</label>
+            <input type="radio" name="tipo" id="campo-hatch" value="hatch">
+            <label for="campo-hatch">Hatch</label>
+            <input type="radio" name="tipo" id="campo-esp" value="esportivo">
+            <label for="campo-esp">Esportivo</label>
+            <input type="radio" name="tipo" id="campo-pic" value="picape">
+            <label for="campo-pic">Picape</label>
+            <input type="radio" name="tipo" id="campo-seda" value="sedan">
+            <label for="campo-seda">Sedan</label>
+        </div>
+            <table border="1" cellpadding="5" cellspacing="10">
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Tipo</th>
+                        <th>Novo/Usado</th>
+                        <th>Ano</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://www.chevrolet.com.br/bypass/gmccontenthub/chevrolet/brasil/Colorizer_Equinox/images/colorizer/equinox-branco-summit-3-4-frente.png" alt="Imagem de um SUV" width="200"></td>
+                        <td>Chevrolet</td>
+                        <td>Equinox</td>
+                        <td>SUV</td>
+                        <td>Novo</td>
+                        <td>2024</td>
+                        <td><a href="https://www.chevrolet.com.br/suvs/equinox">Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img0.icarros.com/dbimg/galeriaimgmodelo/2/106735_1.jpg" alt="Imagem de um Mobi" width="200"></td>
+                        <td>Fiat</td>
+                        <td>Mobi</td>
+                        <td>Hatch</td>
+                        <td>Usado</td>
+                        <td>2018</td>
+                        <td><a href="https://www.icarros.com.br/tabela-fipe/fiat/mobi/2018/mobi-evo-like-1.0-flex">Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://media.toyota.com.br/e58cd0fb-47af-428b-8e0d-aaf6712e6ace.png" alt="Imagem de um corolla" width="200"></td>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>Esportivo</td>
+                        <td>Novo</td>
+                        <td>2024</td>
+                        <td><a href="https://www.toyota.com.br/modelos/corolla-gr-sport">Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://http2.mlstatic.com/D_NQ_NP_2X_767067-MLB71393031281_082023-F.webp" alt="Imagem de um ford f-100" width="200"></td>
+                        <td>Ford</td>
+                        <td>F-100</td>
+                        <td>Picape</td>
+                        <td>Usado</td>
+                        <td>1968</td>
+                        <td><a href="https://carro.mercadolivre.com.br/MLB-3955924282-ford-f100-196868-v8-com-ar-condicionado-_JM#position=1&search_layout=grid&type=item&tracking_id=becba963-21f3-4a79-8723-9935faeb2f64">Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2024/202404/20240415/bmw-320i-2-0-16v-gasolina-4p-automatico-wmimagem18561797913.webp?s=fill&w=552&h=414&q=60" alt="Imagem de uma BMW" width="200"></td>
+                        <td>BMW</td>
+                        <td>320i</td>
+                        <td>Sedan</td>
+                        <td>Novo</td>
+                        <td>2010</td>
+                        <td><a href="https://www.webmotors.com.br/comprar/bmw/320i/20-16v-gasolina-4p-automatico/4-portas/2010/51676061?pos=a51676061g:&np=1">Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+    </form>
+</body>
+
+</html>

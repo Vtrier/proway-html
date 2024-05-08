@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    background-color: tomato;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    
+}
+
+a:hover{
+    background-color: red;
+    opacity: 0.9;
+}
+.negrito{
+    font-weight: bold;
+}
+.largura-150{
+    width: 150px;
+}

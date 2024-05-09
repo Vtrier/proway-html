@@ -1,20 +1,51 @@
+.borda-topo, .borda-direita, .borda-base, .borda-esquerda, .borda-completa, .borda-dashed, .borda-dotted, .borda-double{
+    display: block;
+    margin-bottom: 10px;
+}
+
 .borda-topo{
-    border-top: 2px;
-    border-top-color: yellow;
+    border-top-width: 1px;
+    border-top-color: rgb(51, 17, 219);
     border-top-style: solid;
 }
 .borda-direita{
-    border-right: 4px;
-    border-right-color: rgb(17, 219, 27);
-    border-right-style: solid;
+    border-right-width: 4px; /* largura da borda direita */
+    border-right-color: rgb(17, 219, 27); /* cor da borda direita */ 
+    border-right-style: solid; /* estilo da borda direita */
 }
 .borda-base{
-    border-bottom-width: 3px;
-    border-bottom-color: rgb(219, 17, 158);
-    border-bottom-style: solid;
+    border-bottom-width: 3px; /* largura da borda base */
+    border-bottom-color: rgb(219, 17, 158); /* cor da borda base */ 
+    border-bottom-style: solid; /* estilo da borda base */
 }
+
 .borda-esquerda{
-    border-left-width: 2px;
-    border-left-color: rgb(219, 71, 17);
-    border-left-style: solid;
+    border-left-width: 2px; /* largura da borda esquerda */
+    border-left-color: rgb(219, 71, 17); /* cor da borda esquerda */ 
+    border-left-style: solid; /* estilo da borda esquerda */
+}
+
+.borda-completa{
+    border-top: 3px solid rgb(84, 74, 134);
+    border-right: 3px solid rgb(84, 74, 134);
+    border-bottom: 3px solid rgb(84, 74, 134);
+    border-left: 3px solid rgb(84, 74, 134);
+}
+.borda-dashed{
+    border-top: 3px dashed rgb(86, 63, 201);
+    border-right: 3px dashed rgb(134, 87, 74);
+    border-bottom: 3px dashed rgb(60, 40, 157);
+    border-left: 3px dashed rgb(134, 118, 74);
+}
+.borda-dotted{
+    border-top: 3px dotted rgb(0, 0, 0);
+    border-right: 3px dotted rgb(132, 34, 7);
+    border-bottom: 3px dotted rgb(144, 123, 250);
+    border-left: 3px dotted rgb(96, 71, 3);
+}
+.borda-double{
+    border-top: 3px double rgb(44, 3, 251);
+    border-right: 3px double rgb(255, 58, 3);
+    border-bottom: 3px double rgb(254, 3, 171);
+    border-left: 3px double rgb(39, 254, 1);
 }

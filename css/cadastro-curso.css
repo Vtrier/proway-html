@@ -1,0 +1,54 @@
+.label-campo{
+    display: block;
+}
+.campo{
+    border-radius: 4px;
+    width: 300px;
+    border-color: rgb(53, 58, 70);
+    border-width: 0.8px;
+    padding: 7px 11px;
+    box-sizing: content-box;
+    margin-bottom: 10px;
+}
+.campo:hover{
+    border-color: rgb(66, 88, 255);
+}
+.button-cadastrar{
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+.button-cadastrar:hover{
+    background-color: #0470e3;
+}
+.button-cancelar{
+    padding: 10px 20px;
+    color: rgb(250, 53, 69);
+    
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(250, 53, 69);
+}
+.button-cancelar:hover{
+    background-color: rgb(250, 53, 69);
+    color: white;
+}
+.campo-upload{
+    display: none;
+}
+.label-campo-upload{
+    cursor:pointer;
+    background-color: lightgray;
+    padding: 5px 5px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid lightgray
+}

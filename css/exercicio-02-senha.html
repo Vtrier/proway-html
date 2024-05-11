@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio-02-senha.css">
+    <title>Alterar senha</title>
+</head>
+
+<body>
+    <h1>Alterar senha</h1>
+    <form action="exercicio-02-dados.html" method="get">
+        <div class="left">
+            <div>
+                <label for="campo-email-02">E-mail:</label>
+                <input type="email" name="email" id="campo-email-02" required>
+            </div>
+            <div>
+                <label for="campo-cpf">CPF:</label>
+                <input type="number" name="cpf" id="campo-cpf" required>
+            </div>
+            <div>
+                <label for="campo-data">Data de nascimento:</label>
+                <input type="datetime-local" name="data" id="campo-data" required>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <label for="campo-alterar">Nova senha:</label>
+                <input type="password" name="novaSenha" id="campo-alterar" required>
+            </div>
+            <div>
+                <label for="campo-alterar-02">Confirmar senha:</label>
+                <input type="password" name="confirmarSenha" id="campo-alterar-02" required>
+            </div>
+            <a href="exercicio-02-login.html">Cancelar</a>
+            <button type="submit">Alterar senha</button>
+        </div>
+    </form>
+</body>
+
+</html>

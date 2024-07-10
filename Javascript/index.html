@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let nome = "Roberto";
+        let sobrenome = "da Silva";
+        let idade = 30;
+        nome = "Pedro";
+        let nomeCompleto = `${nome} ${sobrenome} nasceu em ${2024 - idade}`;
+       // alert("Ola mundo " + nomeCompleto);
+
+
+        let jogoNome = prompt("Digite o nome do jogo");
+        let jogoCategoria = prompt("Digite a categoria do jogo");
+        let idadeMinima = parseInt(prompt("Digite a idade mínima para jogar"));
+        let jogoPreco = parseFloat(prompt("Digite o preço do jogo").replace("," , "."));
+        let tagH1 = document.querySelector("h1");
+        tagH1.innerHTML = `O jogo ${jogoNome} é da categoria ${jogoCategoria}\nIdade mínima: ${idadeMinima}\nPreço: ${jogoPreco}`;
+    </script>
+</body>
+</html>

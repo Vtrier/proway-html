@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="number" disabled>
+
+        <div>
+            <button onclick="preencherNumero7()">7</button>
+            <button onclick="preencherNumero8()">8</button>
+            <button onclick="preencherNumero9()">9</button>
+            <button onclick="dividir()">/</button>
+        </div>
+    
+        <div>
+            <button onclick="preencherNumero4()">4</button>
+            <button onclick="preencherNumero5()">5</button>
+            <button onclick="preencherNumero6()">6</button>
+            <button onclick="multiplicar()">*</button>
+        </div>
+        <div>
+            <button onclick="preencherNumero1()">1</button>
+            <button onclick="preencherNumero2()">2</button>
+            <button onclick="preencherNumero3()">3</button>
+            <button onclick="subtrair()">-</button>
+        </div>
+        <div>
+            <button onclick="limpar()">C</button>
+            <button onclick="preencherNumero0()">0</button>
+            <button onclick="realizarOperacao()">=</button>
+            <button onclick="somar()">+</button>
+        </div>    
+    </div>
+</body>
+</html>

@@ -10,6 +10,7 @@ function cadastrar() {
     let nota1Valor = parseFloat(tagInputNota1.value);
     let nota2Valor = parseFloat(tagInputNota2.value);
     let nota3Valor = parseFloat(tagInputNota3.value);
+    let media = parseFloat((nota1Valor+nota2Valor+nota3Valor)/3).toFixed(2);
 
     tagInputNome.value = "";
     tagInputNota1.value = "";
@@ -17,19 +18,19 @@ function cadastrar() {
     tagInputNota3.value = "";
 
     if (tagSpanEditar === null) {
-        criarAluno(nomeValor, nota1Valor, nota2Valor, nota3Valor);
+        criarAluno(nomeValor, nota1Valor, nota2Valor, nota3Valor, media);
     } else {
-        editarAluno(nomeValor, nota1Valor, nota2Valor, nota3Valor);
+        editarAluno(nomeValor, nota1Valor, nota2Valor, nota3Valor, media);
     }
-
+    
     tagInputNome.focus;
 }
 
-function criarAluno(nome, nota1, nota2, nota3) {
+function criarAluno(nome, nota1, nota2, nota3, media) {
     let tagLi = document.createElement("li");
     let tagSpan = document.createElement("span");
 
-    tagSpan.innerHTML = `Nome do aluno: ${nome}\nNotas: ${nota1}, ${nota2}, ${nota3}\nMédia:${(nota1 + nota2 + nota3) / 3}`;
+    tagSpan.innerHTML = `${nome} | ${nota1}, ${nota2}, ${nota3} | ${media}`;
     tagLi.appendChild(tagSpan);
 
     let tagBotaoEditar = document.createElement("button");
@@ -46,8 +47,8 @@ function criarAluno(nome, nota1, nota2, nota3) {
     tagUl.appendChild(tagLi);
 }
 
-function editarAluno(nome, nota1, nota2, nota3) {
-    tagSpanEditar.innerHTML = `${nome} | ${nota1}, ${nota2}, ${nota3} | (${nota1}+${nota2}+${nota3})/3`;
+function editarAluno(nome, nota1, nota2, nota3, media) {
+    tagSpanEditar.innerHTML = `${nome} | ${nota1}, ${nota2}, ${nota3} | ${media}`;
     tagSpanEditar = null;
     alert("Cadastro alterado com sucesso");
 }
@@ -72,7 +73,6 @@ function editar(element) {
     tagInputNota2.value = nota2Valor;
     let tagInputNota3 = document.querySelector("#nota3");
     tagInputNota3.value = nota3Valor;
-
 }
 
 function apagar(element) {

@@ -113,39 +113,6 @@ function tratarOnKeyUpInput(event) {
     }
 }
 
-function criarTabela() {
-    // table tabela
-    //      thead cabeçalho
-    //          tr linha
-    //              th coluna do cabeçalho
-    //              th coluna do cabeçalho
-    //      tbody
-    //          tr
-    //              td coluna do body
-    let tagTabela = document.createElement("table");
-    let tagThead = document.createElement("thead");
-    let tagTheadTr = document.createElement("tr");
-    let tagThId = document.createElement("th");
-    let tagThAnimal = document.createElement("th");
-    let tagThCor = document.createElement("th");
-    let tagThAcao = document.createElement("th");
-    tagThId.innerText = "ID";
-    tagThAnimal.innerText = "Animal";
-    tagThCor.innerText = "Cor";
-    tagThAcao.innerText = "Ação";
-    tagTheadTr.appendChild(tagThId);
-    tagTheadTr.appendChild(tagThAnimal);
-    tagTheadTr.appendChild(tagThCor);
-    tagTheadTr.appendChild(tagThAcao);
-    tagThead.appendChild(tagTheadTr);
-    tagTabela.appendChild(tagThead);
-
-    let tagTbody = document.createElement("tbody");
-    tagTabela.appendChild(tagTbody);
-
-    let body = document.querySelector("body");
-    body.appendChild(tagTabela);
-}
 
 // CRUD => Create, Read, Update, Delete
 function cadastrarAnimal() {
@@ -268,27 +235,6 @@ function criarLinha(id, animal, cor) {
 
     let tbody = document.querySelector("tbody");
     tbody.appendChild(tagTr);
-}
-
-function verificarValorCampo() {
-    let tagInput = document.querySelector("input");
-    let valor = tagInput.value;
-    if (valor.length === 0) {
-        ocultarBotao();
-    } else {
-        mostrarBotao();
-    }
-}
-
-
-function mostrarBotao() {
-    let tagButton = document.querySelector("button");
-    tagButton.classList.remove("hidden");
-}
-
-function ocultarBotao() {
-    let tagButton = document.querySelector("button");
-    tagButton.classList.add("hidden");
 }
 
 criandoHtml();
